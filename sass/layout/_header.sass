@@ -1,0 +1,33 @@
+.header 
+    display: flex
+    height: 5rem
+    justify-content: space-between
+    font-family: 'Inika', serif
+    align-items: center
+
+.logo 
+    align-self: start
+    &__img 
+        width: 1.9rem
+        height: 1.9rem
+    &__text
+        display: inline-block
+        font-weight: 400
+        font-size: 1.6rem
+        color: #000
+
+
+.nav-list 
+    display: flex
+    list-style-type: none
+    &__item:not(:last-child)
+        margin-right: 4.4rem
+    &__link
+        text-decoration: none
+        font-weight: 400
+        font-size: 1.6rem
+        color: #010201
+        transition: .3s
+        cursor: pointer
+        &:hover
+            color: #E06733

@@ -20,6 +20,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
     ],
+
     module: {
         rules: [
             {
@@ -43,19 +44,21 @@ module.exports = {
                 use: [
                     {
                         loader: 'file-loader',
-                    },
+                        options: {
+                            name: '[path][name].[ext]',
+                        }
+                    }
                 ],
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: [
-                // Creates `style` nodes from JS strings
-                "style-loader",
-                // Translates CSS into CommonJS
-                "css-loader",
-                // Compiles Sass to CSS
-                "sass-loader",
-                ],
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader"
+                }, {
+                    loader: "sass-loader"
+                }],
             }
         ]
     }

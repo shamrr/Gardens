@@ -1,0 +1,107 @@
+.first-section
+    margin-bottom: 10.8rem
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+
+.grow
+    align-self: center
+    &__title
+        font-weight: 700
+        font-size: 4.5rem
+        line-height: 5rem
+        color: #717171
+        margin-bottom: 4.2rem
+        span
+            color: #499A18   
+    &__text
+        font-weight: 400
+        font-size: 2rem
+        line-height: 3.5rem
+        color: #636060
+        margin-bottom: 4.8rem 
+    &__btn
+        &, &:link, &:visited
+            font-family: 'Inter', sans-serif
+            font-weight: 400
+            font-size: 1.6rem
+            color: #000
+            text-transform: uppercase
+            padding: 1.2rem 2.5rem
+            border: 2px solid #e06733
+            border-radius: 1rem
+        &:hover
+            background-color: #e06733
+            color: #fff
+
+.prof-gardens
+    padding: 8.2rem 11rem 10.5rem 11rem
+    background-color: #fff
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr))
+    
+.about
+    max-width: 60.5rem
+    align-self: center
+    &__title
+        max-width: 46rem
+        margin-bottom: 4rem
+        span
+            color: #E06733
+    &__text
+        font-weight: 400
+        font-size: 2rem
+        line-height: 3rem
+        color: #636060
+
+.flower
+    justify-self: end
+
+.services
+    padding: 3.5rem 11.9rem
+
+.services-header
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(31rem, max-content))
+    grid-column-gap: 14rem
+    margin-bottom: 9.7rem
+    &__title
+        max-width: 30.7rem
+    &-list
+        align-self: center
+        &__btn
+            &, &:link, &:visited
+                width: 16rem
+                padding: 1.2rem 0
+                text-align: center
+                &:not(:last-child)
+                    margin-right: 3.8rem
+            &:hover
+                background-color: #E06733
+                color: #fff
+
+.service-list
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr))
+    grid-column-gap: 11.6rem
+    grid-row-gap: 5.5rem
+    .service
+        justify-self: center
+        border: .1rem solid #E3E1D5
+        border-radius: 2rem
+        transition: all .4s
+        cursor: pointer
+        &:hover
+            box-shadow: 0rem .4rem .4rem rgba(#000, .25)
+        &__img
+            border-radius: 2rem 2rem 0 0
+            margin-bottom: 1rem
+        &__title
+            margin-bottom: 1rem
+        &__text
+            font-weight: 400
+            font-size: 1.6rem
+            line-height: 2rem
+            color: #717171
+            text-align: center  
+            margin-bottom: 3.6rem
