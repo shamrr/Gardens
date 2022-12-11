@@ -16,6 +16,9 @@
     cursor: pointer
     &:not(:last-child)
         margin-bottom: 3.2rem
+    &:hover
+        box-shadow: 0rem .4rem .4rem rgba(#000, .3)
+
 
 .accordion-title
     font-weight: 700
@@ -24,7 +27,23 @@
     border: none
     background-color: rgba(0, 0, 0, 0)
 
+.title-container
+    display: flex
+    justify-content: space-between
 
+.accordion-arrow
+    width: 1.6rem
+    height: 1.6rem
+    border-radius: 50%
+    background-color: #D9D9D9
+    color: #717171
+    align-self: center
+    transform: rotate(90deg)
+    position: relative
+    p
+        position: absolute
+        top: .1rem
+        right: .4rem
 .accordion-block
     display: none
     hr
