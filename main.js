@@ -15,13 +15,12 @@ import arrowDown from './img/arrowDown.png'
 //функция для выпадающих блоков
 const accordionButton = document.querySelectorAll('.accordion');
 const allAccordionBlock = document.querySelectorAll('.accordion-block');
-const allAccordionArrow = document.querySelectorAll('.accordion-arrow');
+const allAccordionArrow = document.querySelectorAll('.arrow');
 
 accordionButton.forEach((el) => {
     el.addEventListener('click', () => {
         let accordionBlock = el.lastElementChild;
         let accordionTitle = el.firstElementChild;
-
         if(accordionBlock.style.display === "block")
         {
             accordionBlock.style.display = "none";
@@ -66,5 +65,36 @@ function closeAllAccordionBlocks(){
         el.style.display = "none";
     });
 }
+
+//функция для выпадающего блока
+const dropdownBtn = document.querySelector('.dropdown__btn');
+const dropdownContent = document.querySelector('.dropdown__content');
+const dropdownBtnArrow = document.querySelector('.dropdown__btn-arrow');
+
+dropdownBtn.addEventListener('click', function(){
+    if(dropdownContent.style.display === 'flex'){
+        dropdownContent.style.display = 'none';
+        dropdownBtn.style.backgroundColor = '#D6E7D2';
+        dropdownBtnArrow.style.transform = 'rotate(90deg)';
+        dropdownBtnArrow.style.backgroundColor = '#AEA1A1';
+    } else{
+        dropdownContent.style.display ='flex';
+        dropdownBtn.style.backgroundColor = '#C1E698';
+        dropdownBtn.style.border = '.1rem solid #D6E7D2'
+        dropdownBtnArrow.style.transform = 'rotate(-90deg)';
+        dropdownBtnArrow.style.backgroundColor = '#8BA07E';
+    }
+});
+const dropdownContentLink = document.querySelectorAll('.dropdown__content-link');
+const dropdownBlockContainer = document.querySelectorAll('.dropdown-block-container');
+
+dropdownContentLink.forEach((el) => el.addEventListener('click', function(){
+    dropdownContent.style.display = 'none';
+    dropdownBtn.style.backgroundColor = '#D6E7D2';
+    dropdownContent.style.display = 'none';
+    dropdownBtn.style.backgroundColor = '#D6E7D2';
+    dropdownBtnArrow.style.transform = 'rotate(90deg)';
+    dropdownBtnArrow.style.backgroundColor = '#AEA1A1';
+}));
 
 

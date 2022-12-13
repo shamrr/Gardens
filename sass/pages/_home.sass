@@ -123,3 +123,58 @@
         color: #000
         font-family: 'Inter', sans-serif
         margin-bottom: 6rem
+
+.contacts
+    padding-top: 4.5rem
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-template-rows: repeat(3, 1fr)
+    &__title
+        text-align: center
+        grid-column: 2 / 3
+.women
+    grid-column: 1 / 2
+    grid-row: 1 / 4
+
+.dropdown
+    grid-column: 3 / 4
+    grid-row: 1 / 4
+    &__btn
+        border: none
+        background-color: #D6E7D2
+        box-shadow: 0rem .4rem .4rem rgba(0, 0, 0, 0.25)
+        font-size: 2rem
+        color: #717171
+        width: 100%
+        padding: .8rem 30rem .8rem 3.5rem
+        cursor: pointer
+        transition: all .4s
+        position: relative
+        &-arrow
+            position: absolute
+            top: .9rem
+            right: 3.5rem
+            background-color: #AEA1A1
+            color: #fff
+            font-size: 1.5rem
+    &__content
+        display: none
+        background-color: #DCE9D9
+        padding: 3.1rem 3.5rem
+        flex-direction: column
+        &-link
+            &, &:link, &:visited
+                text-decoration: none
+                font-size: 1.6rem
+                color: #499A18
+                transition: all .4s
+                cursor: pointer
+                &:not(:last-child)
+                    margin-bottom: 1.2rem
+            &:hover
+                color: #010201
+            
+    
+.dropdown-block
+    display: none
+    grid-template-columns: repeat(2,1fr)
