@@ -11,6 +11,11 @@ import SERVICE_6 from './img/6service.jpg'
 import LEAFS from './img/leafs.png'
 import WOMEN from './img/women.png'
 import arrowDown from './img/arrowDown.png'
+import INSTA from './img/insta.png'
+import FACEBOOK from './img/facebook.png'
+import TWITTER from './img/twitter.png'
+import PINTEREST from './img/pinterest.png'
+
 
 //функция для выпадающих блоков
 const accordionButton = document.querySelectorAll('.accordion');
@@ -85,16 +90,17 @@ dropdownBtn.addEventListener('click', function(){
         dropdownBtnArrow.style.backgroundColor = '#8BA07E';
     }
 });
-const dropdownContentLink = document.querySelectorAll('.dropdown__content-link');
-const dropdownBlockContainer = document.querySelectorAll('.dropdown-block-container');
+// const dropdownContentAll = document.querySelectorAll('.dropdown__content');
+// const dropdownBlockContainer = document.querySelectorAll('.dropdown-block-container');
 
-dropdownContentLink.forEach((el) => el.addEventListener('click', function(){
-    dropdownContent.style.display = 'none';
-    dropdownBtn.style.backgroundColor = '#D6E7D2';
-    dropdownContent.style.display = 'none';
-    dropdownBtn.style.backgroundColor = '#D6E7D2';
-    dropdownBtnArrow.style.transform = 'rotate(90deg)';
-    dropdownBtnArrow.style.backgroundColor = '#AEA1A1';
-}));
+// dropdownContentAll.forEach((el) => el.addEventListener('click', function(){
+//     dropdownBlockContainer.forEach((block) => {
+//         const element = dropdownContentAll.indexOf(el);
+//         const dropBlock = dropdownBlockContainer.indexOf(block);
+//         if (element === dropBlock){
+//             console.log('1')
+//         }
+//     })
+// }));
 
 

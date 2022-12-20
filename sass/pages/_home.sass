@@ -1,7 +1,7 @@
 .first-section
     margin-bottom: 10.8rem
     display: grid
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr))
 
 
 .grow
@@ -36,13 +36,16 @@
 
 .composition
     filter: blur(.2rem)
+    @include respond(tab-land)
+        width: 90%
 
 
 .prof-gardens
     padding: 8.2rem 11rem 10.5rem 11rem
     background-color: #fff
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr))
+
     
 .about
     max-width: 60.5rem
@@ -60,6 +63,11 @@
 
 .flower
     justify-self: end
+    @include respond(tab-land)
+        width: 90%
+        align-self: center
+
+
 
 .services
     padding: 3.5rem 11.9rem
@@ -69,16 +77,22 @@
     grid-template-columns: repeat(auto-fit, minmax(31rem, max-content))
     grid-column-gap: 14rem
     margin-bottom: 9.7rem
+    @include respond(tab-land)
+        grid-column-gap: 7rem
     &__title
         max-width: 30.7rem
     &-list
         align-self: center
         &__btn
             &, &:link, &:visited
-                width: 16rem
+                width: 15rem
                 padding: 1.2rem 0
                 &:not(:last-child)
                     margin-right: 3.8rem
+                @include respond(tab-land)
+                    width: 11rem
+                    &:not(:last-child)
+                        margin-right: 1.5rem
             &:hover
                 background-color: #E06733
                 color: #fff
@@ -132,49 +146,9 @@
     &__title
         text-align: center
         grid-column: 2 / 3
+        @include respond(tab-land)
+            grid-column: 3 / 4
+            grid-row: 1 / 2
 .women
     grid-column: 1 / 2
     grid-row: 1 / 4
-
-.dropdown
-    grid-column: 3 / 4
-    grid-row: 1 / 4
-    &__btn
-        border: none
-        background-color: #D6E7D2
-        box-shadow: 0rem .4rem .4rem rgba(0, 0, 0, 0.25)
-        font-size: 2rem
-        color: #717171
-        width: 100%
-        padding: .8rem 30rem .8rem 3.5rem
-        cursor: pointer
-        transition: all .4s
-        position: relative
-        &-arrow
-            position: absolute
-            top: .9rem
-            right: 3.5rem
-            background-color: #AEA1A1
-            color: #fff
-            font-size: 1.5rem
-    &__content
-        display: none
-        background-color: #DCE9D9
-        padding: 3.1rem 3.5rem
-        flex-direction: column
-        &-link
-            &, &:link, &:visited
-                text-decoration: none
-                font-size: 1.6rem
-                color: #499A18
-                transition: all .4s
-                cursor: pointer
-                &:not(:last-child)
-                    margin-bottom: 1.2rem
-            &:hover
-                color: #010201
-            
-    
-.dropdown-block
-    display: none
-    grid-template-columns: repeat(2,1fr)
