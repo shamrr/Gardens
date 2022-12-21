@@ -2,7 +2,8 @@
     margin-bottom: 10.8rem
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr))
-
+    @include respond(tab-port)
+        grid-template-columns: repeat(2, 1fr)
 
 .grow
     align-self: center
@@ -12,6 +13,8 @@
         line-height: 5rem
         color: #717171
         margin-bottom: 4.2rem
+        @include respond(tab-port)
+            grid-column: 1 / 2
         span
             color: #499A18   
     &__text
@@ -38,21 +41,33 @@
     filter: blur(.2rem)
     @include respond(tab-land)
         width: 90%
+    @include respond(tab-port)
+        display: none
 
 
 .prof-gardens
     padding: 8.2rem 11rem 10.5rem 11rem
     background-color: #fff
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)) 
+    @include respond(tab-port)
+        grid-template-columns: 100%
+        grid-template-rows: repeat(2, max-content)
+        grid-row-gap: 4rem
+        justify-content: center
 
-    
 .about
     max-width: 60.5rem
     align-self: center
+    @include respond(tab-port)
+        max-width: 100%
     &__title
         max-width: 46rem
         margin-bottom: 4rem
+        @include respond(tab-port)
+            text-align: center
+            margin: 0 auto
+            margin-bottom: 4rem
         span
             color: #E06733
     &__text
@@ -66,6 +81,9 @@
     @include respond(tab-land)
         width: 90%
         align-self: center
+    @include respond(tab-port)
+        width: 45%
+        justify-self: center
 
 
 
@@ -79,8 +97,13 @@
     margin-bottom: 9.7rem
     @include respond(tab-land)
         grid-column-gap: 7rem
+    @include respond(tab-port)
+        grid-template-columns: repeat(auto-fit, minmax(60rem, max-content))
+        margin-bottom: 4rem
     &__title
         max-width: 30.7rem
+        @include respond(tab-port)
+            margin-bottom: 4rem
     &-list
         align-self: center
         &__btn
@@ -93,13 +116,17 @@
                     width: 11rem
                     &:not(:last-child)
                         margin-right: 1.5rem
+                @include respond(tab-port)
+                    width: 15rem
+                    &:not(:last-child)
+                        margin-right: 3.8rem
             &:hover
                 background-color: #E06733
                 color: #fff
 
 .prices
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr))
     background-color: #fff
     padding-top: 3.8rem
     padding-bottom: 1.2rem
@@ -116,6 +143,8 @@
         margin-bottom: 3.1rem
         text-align: right
         max-width: 45rem
+        @include respond(tab-port)
+            text-align: center
         span 
             color: #499A18
     &__btn
@@ -130,6 +159,9 @@
 
 .leafs
     filter: blur(.25rem)
+    @include respond(tab-port)
+        width: 53%
+        margin-top: 5.3rem
 
 .price
     &__title
@@ -143,12 +175,23 @@
     display: grid
     grid-template-columns: repeat(3,1fr)
     grid-template-rows: repeat(3, 1fr)
+    @include respond(tab-port)
+        grid-template-rows: repeat(4, max-content)
     &__title
         text-align: center
         grid-column: 2 / 3
         @include respond(tab-land)
             grid-column: 3 / 4
             grid-row: 1 / 2
+        @include respond(tab-port)
+            grid-row: 1 / 2
+            grid-column: 2 / 3
+
 .women
     grid-column: 1 / 2
-    grid-row: 1 / 4
+    grid-row: 1 / 2
+    @include respond(tab-port)
+        width: 20rem
+        grid-row: 3 / 4
+        grid-column: 2 / 3
+        justify-self: center
