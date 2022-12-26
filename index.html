@@ -4,9 +4,253 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Gardens</title>
 <script defer src="build.js"></script></head>
 <body>
-    <h1>hey</h1>
+    <div class="container">
+        <div class="sidebar">
+            <button class="hamburger"></button>
+
+            <div class="sidebar__nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#home" class="nav-list__link">Home</a></li>
+                    <li class="nav-list__item"><a href="#about" class="nav-list__link">About us</a></li>
+                    <li class="nav-list__item"><a href="#service" class="nav-list__link">Service</a></li>
+                    <li class="nav-list__item"><a href="#prices" class="nav-list__link">Price</a></li>
+                    <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <header class="header margin-top-button-5rem padding-11rem">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="logo" class="logo__img">
+                    <p class="logo__text">Plants</p>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#home" class="nav-list__link">Home</a></li>
+                    <li class="nav-list__item"><a href="#about" class="nav-list__link">About us</a></li>
+                    <li class="nav-list__item"><a href="#service" class="nav-list__link">Service</a></li>
+                    <li class="nav-list__item"><a href="#prices" class="nav-list__link">Price</a></li>
+                    <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="first-section padding-11rem" id="home">
+            <img src="img/composition.png" alt="composition" class="composition">
+            <div class="grow">
+                <h1 class="grow__title">We grow <span>plants</span> and give you oxygen</h1>
+                <p class="grow__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+                <a href="#" class="btn grow__btn">Learn more</a>
+            </div>
+        </section>
+
+        <section class="prof-gardens padding-11rem" id="about">
+            <div class="about">
+                <h2 class="second-title about__title">We are <span>professional experienced</span> gardeners</h2>
+                <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            <img src="./img/flower.png" alt="flower" class="flower">
+        </section>
+        
+        <section class="services padding-11rem" id="service">
+            <div class="services-header">
+                <h2 class="second-title services-header__title">Service and our projects</h2>
+                <div class="services-header-list">
+                    <a href="#" class="btn services-header-list__btn">Gargens</a>
+                    <a href="#" class="btn services-header-list__btn">Lawn</a>
+                    <a href="#" class="btn services-header-list__btn">Planting</a>
+                </div>
+            </div>
+
+            <div class="service-list">
+                <div class="service">
+                    <img src="./img/1service.jpg" alt="img" class="service__img">
+                    <h4 class="fourth-title  service__title">Garden care</h4>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+
+                <div class="service">
+                    <img src="./img/2service.jpg" alt="img" class="service__img">
+                    <h4 class="fourth-title service__title">Planting</h4>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+
+                <div class="service">
+                    <img src="./img/3service.jpg" alt="img" class="service__img">
+                    <h4 class="fourth-title  service__title">Lawn care</h4>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+
+                <div class="service">
+                    <img src="./img/4service.jpg" alt="img" class="service__img">
+                    <h4 class="fourth-title service__title">Planting</h4>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+
+                <div class="service">
+                    <img src="./img/5service.jpg" alt="img" class="service__img">
+                    <h4 class="fourth-title  service__title">Garden care</h4>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+
+                <div class="service">
+                    <img src="./img/6service.jpg" alt="img" class="service__img">
+                    <h4 class="fourth-title service__title">Planting</h4>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices padding-11rem" id="prices">
+            <div class="price">
+                <h2 class="second-title price__title">Prices</h2>
+
+                <div class="accordion-container">
+
+                    <div class="accordion" id="accordion">
+                        <div class="title-container">
+                            <button class="accordion-title">Basics</button>
+                            <div class="arrow"><p>></p></div>
+                        </div>
+                        
+                        <div class="accordion-block">
+                            <hr>
+                            <p class="accordion-block__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <p class="accordion-block__price"><span>$15 </span>/ per hour</p>
+                            <a href="#contacts"  class="accordion-block__btn">Order</a>
+                        </div>
+                    </div>
+    
+                    <div class="accordion" id="accordion">
+                        <div class="title-container">
+                            <button class="accordion-title">Standart</button>
+                            <div class="arrow"><p>></p></div>
+                        </div>
+        
+                        <div class="accordion-block">
+                            <hr>
+                            <p class="accordion-block__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <p class="accordion-block__price"><span>$25 </span>/ per hour</p>
+                            <a href="#contacts" class="accordion-block__btn">Order</a>
+                        </div>
+                    </div>
+    
+                    <div class="accordion" id="accordion">
+                        <div class="title-container">
+                            <button class="accordion-title">Pro care</button>
+                            <div class="arrow"><p>></p></div>
+                        </div>
+        
+                        <div class="accordion-block">
+                            <hr>
+                            <p class="accordion-block__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <p class="accordion-block__price"><span>$35 </span>/ per hour</p>
+                            <a href="#contacts" class="accordion-block__btn">Order</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="help">
+                <h2 class="second-title help__title">Our best <span>gardeners</span> are ready to help you</h2>
+                <a href="#" class="btn help__btn">Contact us</a>
+                <img src="img/leafs.png" alt="leafs" class="leafs">
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts padding-11rem" id="contacts">
+            <img src="img/women.png" alt="img" class="women">
+
+            <h2 class="second-title contacts__title">Contact us</h2>
+
+            <div class="dropdown margin-top-90px">
+
+                <button class="dropdown__btn">City
+                    <p class="arrow dropdown__btn-arrow">></p>
+                </button>
+                
+                <div class="dropdown__content">
+                    <div href="#" class="dropdown__content-link">Canandaigua, NY</div>
+                    <div href="#" class="dropdown__content-link">New York City</div>
+                    <div href="#" class="dropdown__content-link">Yonkers, NY</div>
+                    <div href="#" class="dropdown__content-link">Sherrill, NY</div>
+                </div>
+
+                <div class="dropdown-block-container">
+                    <div class="dropdown-block">
+                        <h5 class="dropdown-block__title">City</h5>
+                        <p class="dropdown-block__text">Canandaigua, NY</p>
+    
+                        <h5 class="dropdown-block__title">Phone:</h5>
+                        <p class="dropdown-block__text">+1 585 393 0001</p>
+    
+                        <h5 class="dropdown-block__title">Office adress:</h5>
+                        <p class="dropdown-block__text">151 Charlotte Street</p>
+    
+                        <a href="tel: +1 585 393 0001" class="btn dropdown-block__btn">Call us</a>
+                    </div>
+
+                    <div class="dropdown-block">
+                        <h5 class="dropdown-block__title">City</h5>
+                        <p class="dropdown-block__text">New York City</p>
+    
+                        <h5 class="dropdown-block__title">Phone:</h5>
+                        <p class="dropdown-block__text">+1	212	456 0002</p>
+    
+                        <h5 class="dropdown-block__title">Office adress:</h5>
+                        <p class="dropdown-block__text">9 East 91st Street</p>
+    
+                        <a href="tel: +1 212 456 0002" class="btn dropdown-block__btn">Call us</a>
+                    </div>
+
+                    <div class="dropdown-block">
+                        <h5 class="dropdown-block__title">City</h5>
+                        <p class="dropdown-block__text">Yonkers, NY</p>
+    
+                        <h5 class="dropdown-block__title">Phone:</h5>
+                        <p class="dropdown-block__text">+1	914	678 0003</p>
+    
+                        <h5 class="dropdown-block__title">Office adress:</h5>
+                        <p class="dropdown-block__text">511 Warburton Ave</p>
+    
+                        <a href="tel: +1 914 678 0003" class="btn dropdown-block__btn">Call us</a>
+                    </div>
+
+                    <div class="dropdown-block">
+                        <h5 class="dropdown-block__title">City</h5>
+                        <p class="dropdown-block__text">Sherrill, NY</p>
+    
+                        <h5 class="dropdown-block__title">Phone:</h5>
+                        <p class="dropdown-block__text">+1	315	908 0004</p>
+    
+                        <h5 class="dropdown-block__title">Office adress:</h5>
+                        <p class="dropdown-block__text">14 WEST Noyes BLVD</p>
+    
+                        <a href="tel: +1 315 908 0004" class="btn dropdown-block__btn">Call us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer padding-11rem">
+            <p class="footer__text">© 2022 <a href="https://github.com/shamrr?tab=repositories" class="footer__link">Github</a></p>
+            <p class="footer__text">Gardens</p>
+            <ul class="footer-list">
+                <li class="footer-list__item"><a href="https://instagram.com/_.shamr._?igshid=YmMyMTA2M2Y=" class="footer-list__link" target="_blank"><img src="./img/insta.png" alt="img"></a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link"><img src="./img/facebook.png" alt="img"></a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link"><img src="./img/twitter.png" alt="img"></a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link"><img src="./img/pinterest.png" alt="img"></a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
