@@ -10,7 +10,9 @@
     &__link
         text-decoration: none
         color: #000
-
+    @include respond(phone)
+        flex-direction: column
+        align-items: center
 .footer-list
     display: flex
     list-style-type: none

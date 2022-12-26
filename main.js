@@ -104,3 +104,12 @@ dropdownBtn.addEventListener('click', function(){
 // }));
 
 
+//бургер
+const sidebar = document.querySelector('.sidebar');
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+    if(sidebar.classList.contains('sidebar_active')){
+        sidebar.classList.toggle('sidebar_active')
+    } else
+        sidebar.classList.add('sidebar_active');
+});
